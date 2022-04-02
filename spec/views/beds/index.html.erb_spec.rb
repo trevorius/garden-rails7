@@ -12,11 +12,12 @@ RSpec.describe "beds/index", type: :view do
         bed_type: "Bed Type"
       )
     ])
+    pp Bed.all
   end
 
-  it "renders a list of beds" do
+  it "renders a list of 2 beds" do
     render
-    assert_select "tr>td", text: "Name".to_s, count: 2
-    assert_select "tr>td", text: "Bed Type".to_s, count: 2
+    assert_select "div>p>strong", text: "Name:".to_s, count: 2
+    assert_select "div>p>strong", text: "Bed type:".to_s, count: 2
   end
 end
