@@ -410,3 +410,6 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/rails,rubymine,ruby,node,visualstudiocode,yarn
 
 .idea/
+
+# Ignore application configuration
+/config/application.yml
