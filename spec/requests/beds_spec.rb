@@ -18,11 +18,12 @@ RSpec.describe "/beds", type: :request do
   # Bed. As you add validations to Bed, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    # skip("Add a hash of attributes valid for your model")
+
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    # skip("Add a hash of attributes invalid for your model")
   }
 
   describe "GET /index" do
