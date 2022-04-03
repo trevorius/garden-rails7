@@ -89,7 +89,6 @@ RSpec.describe "/beds", type: :request do
 
       it "renders an unssuccessful response (i.e. Unprocessable Entity)" do
         post beds_url, params: { bed: invalid_attributes }
-        pp response
         expect(response.status).to eq(422)
       end
     end

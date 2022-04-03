@@ -12,7 +12,6 @@ RSpec.describe "beds/index", type: :view do
         bed_type: "Bed Type"
       )
     ])
-    pp Bed.all
   end
 
   it "renders a list of 2 beds" do
