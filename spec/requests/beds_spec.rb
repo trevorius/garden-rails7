@@ -13,17 +13,26 @@ require 'rails_helper'
 # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 RSpec.describe "/beds", type: :request do
-  
+
   # This should return the minimal set of attributes required to create a valid
   # Bed. As you add validations to Bed, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
     # skip("Add a hash of attributes valid for your model")
-
+    {
+      name: "bed1",
+      bed_type: "ground",
+      last_watered: DateTime.now,
+    }
   }
 
   let(:invalid_attributes) {
     # skip("Add a hash of attributes invalid for your model")
+    {
+      nametesting: nil,
+      bed_typetesting: nil,
+      last_wateredtesting: nil,
+    }
   }
 
   describe "GET /index" do
@@ -78,24 +87,35 @@ RSpec.describe "/beds", type: :request do
         }.to change(Bed, :count).by(0)
       end
 
-      it "renders a successful response (i.e. to display the 'new' template)" do
+      it "renders an unssuccessful response (i.e. Unprocessable Entity)" do
         post beds_url, params: { bed: invalid_attributes }
-        expect(response).to be_successful
+        expect(response.status).to eq(422)
       end
     end
   end
 
   describe "PATCH /update" do
     context "with valid parameters" do
+      before do
+        @name = "updated bed"
+        @bed_type = "updated bed type"
+      end
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        # skip("Add a hash of attributes valid for your model")
+        {
+          name: @name,
+          bed_type: @bed_type,
+          last_watered: DateTime.now,
+        }
       }
 
       it "updates the requested bed" do
         bed = Bed.create! valid_attributes
         patch bed_url(bed), params: { bed: new_attributes }
         bed.reload
-        skip("Add assertions for updated state")
+        expect(bed.name).to eq(@name)
+        expect(bed.bed_type).to eq(@bed_type)
+
       end
 
       it "redirects to the bed" do
@@ -107,10 +127,28 @@ RSpec.describe "/beds", type: :request do
     end
 
     context "with invalid parameters" do
-      it "renders a successful response (i.e. to display the 'edit' template)" do
+      before do
         bed = Bed.create! valid_attributes
+        @tmp_bed = Bed.new({
+                            id:bed.id,
+                            name: bed.name,
+                            bed_type: bed.bed_type,
+                            last_watered: bed.last_watered,
+                            created_at: bed.created_at,
+                            updated_at: bed.updated_at,
+                          })
+
+        @bed_count = Bed.count
         patch bed_url(bed), params: { bed: invalid_attributes }
-        expect(response).to be_successful
+      end
+      it "renders a unsuccessful response (i.e. Redirect)" do
+        expect(response.status).to eq(302)
+      end
+      it 'doesnt create a new bed' do
+        expect(Bed.count).to eq(@bed_count)
+      end
+      it 'doesnt update the bed' do
+        expect(Bed.last).to eq(@tmp_bed)
       end
     end
   end

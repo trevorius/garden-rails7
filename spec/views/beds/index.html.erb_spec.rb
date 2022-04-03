@@ -8,11 +8,10 @@ RSpec.describe "beds/index", type: :view do
         bed_type: "Bed Type"
       ),
       Bed.create!(
-        name: "Name",
+        name: "Name2",
         bed_type: "Bed Type"
       )
     ])
-    pp Bed.all
   end
 
   it "renders a list of 2 beds" do

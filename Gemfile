@@ -78,3 +78,4 @@ group :test do
 end
 
 gem 'figaro'
+gem 'simplecov', require: false, group: :test
