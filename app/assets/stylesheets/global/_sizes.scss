@@ -1,0 +1,9 @@
+@for $i from 1 through 4 {
+  $value: $i * 25;
+  .height-#{$value}vh{
+    height: 1vh * $value;
+    &.width--double-height{
+      width: 1vh * $value * 2;
+    }
+  }
+}
