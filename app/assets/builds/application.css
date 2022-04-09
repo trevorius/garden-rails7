@@ -17868,3 +17868,122 @@ textarea.form-control-lg {
 .bi-filetype-xlsx::before {
   content: "\f793";
 }
+
+.text--grass_green {
+  color: #2B933C;
+}
+
+.bg--grass_green {
+  background-color: #2B933C;
+}
+
+.text--blue_deep {
+  color: #2B4D93;
+}
+
+.bg--blue_deep {
+  background-color: #2B4D93;
+}
+
+.text--brown_pastel {
+  color: #93702B;
+}
+
+.bg--brown_pastel {
+  background-color: #93702B;
+}
+
+.text--purple_compliment_grass_green {
+  color: #932B81;
+}
+
+.bg--purple_compliment_grass_green {
+  background-color: #932B81;
+}
+
+.text--violet {
+  color: #3C2B93;
+}
+
+.bg--violet {
+  background-color: #3C2B93;
+}
+
+.text--red_brick {
+  color: #933C2B;
+}
+
+.bg--red_brick {
+  background-color: #933C2B;
+}
+
+.text--grey {
+  color: grey;
+}
+
+.bg--grey {
+  background-color: grey;
+}
+
+.text--garden_soil {
+  color: #270414;
+}
+
+.bg--garden_soil {
+  background-color: #270414;
+}
+
+.height-25vh {
+  height: 25vh;
+}
+.height-25vh.width--double-height {
+  width: 50vh;
+}
+
+.height-50vh {
+  height: 50vh;
+}
+.height-50vh.width--double-height {
+  width: 100vh;
+}
+
+.height-75vh {
+  height: 75vh;
+}
+.height-75vh.width--double-height {
+  width: 150vh;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+.height-100vh.width--double-height {
+  width: 200vh;
+}
+
+.grass {
+  background-color: #2B933C;
+}
+
+.body {
+  height: 100vh;
+  margin: 0;
+}
+
+.all {
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: #933C2B;
+}
+
+.map {
+  font-size: 16px;
+  /*reset font size*/
+  height: 100vh;
+  width: 200vh;
+}
+.map .height-100 {
+  height: 100%;
+}
