@@ -6,4 +6,7 @@
       width: 1vh * $value * 2;
     }
   }
+  .height-#{$value}{
+    height: 1% * $value;
+  }
 }
