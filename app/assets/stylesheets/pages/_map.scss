@@ -17,11 +17,8 @@
   background-color: $red_brick;
 
   .map{
-    font-size: 16px; /*reset font size*/
     height: 100vh;
     width: 200vh;
-    //display: inline-block;
-
     .bed{
       height: 100%;
       width: 100%;
@@ -30,19 +27,18 @@
     .row-parking{
       display: flex;
       height: 20%;
+      background-color: $grass_green;
       .parking{
-        height: 100%;
         background-color: $grey;
         border-bottom: 2px dashed black;
         border-right: 2px dashed black;
-
+      }
+      .h-fence__bed{
       }
       .compost-area{
         height: 100%;
-        background-color: $grass_green;
-        .fence__bed{
+        .v-fence__bed{
           height: 100%;
-          background-color: $grey;
           padding: 0% 2% 0 0;
         }
       }
