@@ -1,2 +1,11 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+//custom rules
+@import 'global/variables';
+@import 'global/colors';
+@import 'global/sizes';
+
+// page specific
+@import 'pages/map';
+

@@ -1,0 +1,47 @@
+@import '../global/variables';
+.grass{
+  background-color: $grass_green;
+
+}
+
+
+.body {
+  height: 100vh;
+  margin: 0;
+}
+.all{
+  height:100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: $red_brick;
+
+  .map{
+    height: 100vh;
+    width: 200vh;
+    .bed{
+      height: 100%;
+      width: 100%;
+      background-color: $garden_soil;
+    }
+    .row-parking{
+      display: flex;
+      background-color: $grass_green;
+      .parking{
+        background-color: $grey;
+        border-bottom: 2px dashed black;
+        border-right: 2px dashed black;
+      }
+      .h-fence__bed{
+      }
+      .compost-area{
+        height: 100%;
+        .v-fence__bed{
+          height: 100%;
+          padding: 0% 2% 0 0;
+        }
+      }
+    }
+  }
+}
+

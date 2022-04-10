@@ -1,0 +1,14 @@
+$iterations: 100; // 100 must be divisible by iterations
+
+@for $i from 1 through $iterations {
+  $value: $i * calc(100 / $iterations); // not an error compiles correctly and is suggestion to replace deprecated use of division
+  .height-#{$value}vh{
+    height: 1vh * $value;
+    &.width--double-height{
+      width: 1vh * $value * 2;
+    }
+  }
+  .height-#{$value}{
+    height: 1% * $value;
+  }
+}

@@ -76,6 +76,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem 'rails-controller-testing'
 
 gem 'figaro'
 gem 'simplecov', require: false, group: :test
