@@ -1,4 +1,4 @@
-$iterations: 10; // 100 must be divisible by iterations
+$iterations: 100; // 100 must be divisible by iterations
 
 @for $i from 1 through $iterations {
   $value: $i * calc(100 / $iterations); // not an error compiles correctly and is suggestion to replace deprecated use of division
