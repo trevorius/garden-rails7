@@ -15,14 +15,36 @@
   overflow-y: hidden;
   white-space: nowrap;
   background-color: $red_brick;
-}
-.map{
-  font-size: 16px; /*reset font size*/
-  height: 100vh;
-  width: 200vh;
-  //display: inline-block;
-  .height-100{
-    height: 100%;
+
+  .map{
+    font-size: 16px; /*reset font size*/
+    height: 100vh;
+    width: 200vh;
+    //display: inline-block;
+
+    .bed{
+      height: 100%;
+      width: 100%;
+      background-color: $garden_soil;
+    }
+    .row-parking{
+      display: flex;
+      height: 20%;
+      .parking{
+        height: 100%;
+        background-color: $grey;
+      }
+      .compost-area{
+        height: 100%;
+        background-color: $grass_green;
+        .fence__bed{
+          height: 100%;
+          background-color: $grey;
+          border-left: 2px dashed black;
+          padding: 0% 2% 0 0;
+        }
+      }
+    }
   }
 }
 
