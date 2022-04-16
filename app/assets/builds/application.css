@@ -19033,6 +19033,90 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.width-1 {
+  width: 8.3333333333%;
+}
+.width-1 .flex {
+  flex: 0 0 auto;
+}
+
+.width-2 {
+  width: 16.6666666667%;
+}
+.width-2 .flex {
+  flex: 0 0 auto;
+}
+
+.width-3 {
+  width: 25%;
+}
+.width-3 .flex {
+  flex: 0 0 auto;
+}
+
+.width-4 {
+  width: 33.3333333333%;
+}
+.width-4 .flex {
+  flex: 0 0 auto;
+}
+
+.width-5 {
+  width: 41.6666666667%;
+}
+.width-5 .flex {
+  flex: 0 0 auto;
+}
+
+.width-6 {
+  width: 50%;
+}
+.width-6 .flex {
+  flex: 0 0 auto;
+}
+
+.width-7 {
+  width: 58.3333333333%;
+}
+.width-7 .flex {
+  flex: 0 0 auto;
+}
+
+.width-8 {
+  width: 66.6666666667%;
+}
+.width-8 .flex {
+  flex: 0 0 auto;
+}
+
+.width-9 {
+  width: 75%;
+}
+.width-9 .flex {
+  flex: 0 0 auto;
+}
+
+.width-10 {
+  width: 83.3333333333%;
+}
+.width-10 .flex {
+  flex: 0 0 auto;
+}
+
+.width-11 {
+  width: 91.6666666667%;
+}
+.width-11 .flex {
+  flex: 0 0 auto;
+}
+
+.width-12 {
+  width: 100%;
+}
+.width-12 .flex {
+  flex: 0 0 auto;
+}
+
 .grass {
   background-color: #2B933C;
 }
