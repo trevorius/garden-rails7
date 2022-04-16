@@ -3,7 +3,7 @@
 $heightIterations: 100; // 100 must be divisible by iterations
 $widthIterations: 12;
 @for $i from 1 through $heightIterations {
-  $value: $i * calc(100 / $heightIterations); // not an error compiles correctly and is suggestion to replace deprecated use of division
+  $value: $i * math.div(100, $heightIterations); // not an error compiles correctly and is suggestion to replace deprecated use of division
   .height-#{$value}vh{
     height: 1vh * $value;
     &.width--double-height{
@@ -15,7 +15,7 @@ $widthIterations: 12;
   }
 }
 
-@for $i from 1 through $widthIterations {
+@for $i from 1 through $widthIterations { // is equivalent to bootstrap col- class
   $value: math.div($i,$widthIterations) *100;
   .width-#{$i}{
     width: 1% * $value;
