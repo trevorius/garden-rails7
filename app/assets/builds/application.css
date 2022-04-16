@@ -19142,6 +19142,11 @@ textarea.form-control-lg {
   width: 100%;
   background-color: #270414;
 }
+.all .map .compost-bin {
+  height: 100%;
+  width: 100%;
+  background-color: #93702B;
+}
 .all .map .row-parking {
   display: flex;
   background-color: #2B933C;
@@ -19157,4 +19162,9 @@ textarea.form-control-lg {
 .all .map .row-parking .compost-area .v-fence__bed {
   height: 100%;
   padding: 0% 2% 0 0;
+}
+.all .map .main-garden .circle-bed {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
 }
