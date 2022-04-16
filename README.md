@@ -3,7 +3,7 @@
 ## context
 an exercise in css and bootstrap.  
 **the plan is:**
-1. v1: to make a map of a garden using html and css.  
+1. v1: to make a map of a garden using html and css. bootstrap is to be used to a minimum and avoided learn css better.  
 2. v2: later the user will be able to signal they have watered the beds by clicking them and they will change color to indicate this.
 the height of the watered overlay should decrease as time goes by.
 3. v3: plant contents of beds will be indicated in each representation on map
