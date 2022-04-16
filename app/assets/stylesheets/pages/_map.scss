@@ -3,8 +3,6 @@
   background-color: $grass_green;
 
 }
-
-
 .body {
   height: 100vh;
   margin: 0;
@@ -15,7 +13,6 @@
   overflow-y: hidden;
   white-space: nowrap;
   background-color: $red_brick;
-
   .map{
     height: 100vh;
     width: 200vh;
@@ -45,6 +42,14 @@
           height: 100%;
           padding: 0% 2% 0 0;
         }
+      }
+    }
+    .main-garden{
+      .circle-bed{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+
       }
     }
   }
