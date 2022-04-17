@@ -19168,7 +19168,18 @@ textarea.form-control-lg {
   padding-bottom: 5%;
   padding-right: 5%;
 }
-.all .map .main-garden .entrance-section {
-  padding-top: 5%;
-  padding-bottom: 5%;
+.all .map .main-garden .circle-bed .circle-bed__top .c-b_top__bed {
+  border-radius: 100% 100% 0 0;
+}
+.all .map .main-garden .circle-bed .circle-bed__top .c-b_top__bed-path .c-b_t_bed-path__path {
+  border-radius: 100% 100% 0 0;
+}
+.all .map .main-garden .circle-bed .circle-bed__center .c-b_center__center-bed {
+  border-radius: 50%;
+}
+.all .map .main-garden .circle-bed .circle-bed__bottom .c-b_bottom__bed-path .c-b_b_bed-path__path {
+  border-radius: 0 0 100% 100%;
+}
+.all .map .main-garden .circle-bed .circle-bed__bottom .c-b_bottom__bed {
+  border-radius: 0 0 100% 100%;
 }
