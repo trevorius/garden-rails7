@@ -23,4 +23,11 @@ $widthIterations: 12;
       flex: 0 0 auto;
     }
   }
+  .h-#{$i} {
+    height: 1% * $value;
+
+    & .flex {
+      flex: 0 0 auto;
+    }
+  }
 }
