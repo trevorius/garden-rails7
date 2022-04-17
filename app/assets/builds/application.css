@@ -19040,10 +19040,24 @@ textarea.form-control-lg {
   flex: 0 0 auto;
 }
 
+.h-1 {
+  height: 8.3333333333%;
+}
+.h-1 .flex {
+  flex: 0 0 auto;
+}
+
 .width-2 {
   width: 16.6666666667%;
 }
 .width-2 .flex {
+  flex: 0 0 auto;
+}
+
+.h-2 {
+  height: 16.6666666667%;
+}
+.h-2 .flex {
   flex: 0 0 auto;
 }
 
@@ -19054,10 +19068,24 @@ textarea.form-control-lg {
   flex: 0 0 auto;
 }
 
+.h-3 {
+  height: 25%;
+}
+.h-3 .flex {
+  flex: 0 0 auto;
+}
+
 .width-4 {
   width: 33.3333333333%;
 }
 .width-4 .flex {
+  flex: 0 0 auto;
+}
+
+.h-4 {
+  height: 33.3333333333%;
+}
+.h-4 .flex {
   flex: 0 0 auto;
 }
 
@@ -19068,10 +19096,24 @@ textarea.form-control-lg {
   flex: 0 0 auto;
 }
 
+.h-5 {
+  height: 41.6666666667%;
+}
+.h-5 .flex {
+  flex: 0 0 auto;
+}
+
 .width-6 {
   width: 50%;
 }
 .width-6 .flex {
+  flex: 0 0 auto;
+}
+
+.h-6 {
+  height: 50%;
+}
+.h-6 .flex {
   flex: 0 0 auto;
 }
 
@@ -19082,10 +19124,24 @@ textarea.form-control-lg {
   flex: 0 0 auto;
 }
 
+.h-7 {
+  height: 58.3333333333%;
+}
+.h-7 .flex {
+  flex: 0 0 auto;
+}
+
 .width-8 {
   width: 66.6666666667%;
 }
 .width-8 .flex {
+  flex: 0 0 auto;
+}
+
+.h-8 {
+  height: 66.6666666667%;
+}
+.h-8 .flex {
   flex: 0 0 auto;
 }
 
@@ -19096,10 +19152,24 @@ textarea.form-control-lg {
   flex: 0 0 auto;
 }
 
+.h-9 {
+  height: 75%;
+}
+.h-9 .flex {
+  flex: 0 0 auto;
+}
+
 .width-10 {
   width: 83.3333333333%;
 }
 .width-10 .flex {
+  flex: 0 0 auto;
+}
+
+.h-10 {
+  height: 83.3333333333%;
+}
+.h-10 .flex {
   flex: 0 0 auto;
 }
 
@@ -19110,10 +19180,24 @@ textarea.form-control-lg {
   flex: 0 0 auto;
 }
 
+.h-11 {
+  height: 91.6666666667%;
+}
+.h-11 .flex {
+  flex: 0 0 auto;
+}
+
 .width-12 {
   width: 100%;
 }
 .width-12 .flex {
+  flex: 0 0 auto;
+}
+
+.h-12 {
+  height: 100%;
+}
+.h-12 .flex {
   flex: 0 0 auto;
 }
 
@@ -19141,6 +19225,10 @@ textarea.form-control-lg {
   height: 100%;
   width: 100%;
   background-color: #270414;
+}
+.all .map .bed.elevated {
+  border-radius: 2%;
+  box-shadow: 5px 10px 18px #270414;
 }
 .all .map .compost-bin {
   height: 100%;
@@ -19182,4 +19270,15 @@ textarea.form-control-lg {
 }
 .all .map .main-garden .circle-bed .circle-bed__bottom .c-b_bottom__bed {
   border-radius: 0 0 100% 100%;
+}
+.all .map .main-garden .entrance-section .parking-side-section .parking-side-section__second .bed-row {
+  height: 50%;
+  padding: 1%;
+}
+.all .map .main-garden .entrance-section .parking-side-section .parking-side-section__second .bed-row .bed-container {
+  height: 100%;
+  padding: 1%;
+}
+.all .map .main-garden .entrance-section .path {
+  padding: 2% 0;
 }
